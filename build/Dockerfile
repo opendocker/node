@@ -15,3 +15,6 @@ ADD . /build
 RUN \
 	/build/install.sh && \
 	/build/cleanup.sh
+
+# Set node as default command
+CMD ["/sbin/my_init", "--", "/usr/local/bin/node"]
