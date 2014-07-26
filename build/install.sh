@@ -11,6 +11,9 @@ apt-get dist-upgrade -y --no-install-recommends
 mkdir /build/node
 cd /build/node
 
+# Build essential for addons and to compile node
+$minimal_apt_get_install build-essential
+
 # Download node
 curl -s \
   "http://nodejs.org/dist/v${node_version}/node-v${node_version}.tar.gz" \
