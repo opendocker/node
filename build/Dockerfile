@@ -5,7 +5,7 @@
 #
 
 # python base
-FROM opendocker/python:0.1.0
+FROM opendocker/python:0.2.0
 
 # Add our build directory
 RUN mkdir /build
